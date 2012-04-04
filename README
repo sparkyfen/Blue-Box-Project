@@ -1,0 +1,33 @@
+This project is being developed for a proof of concept only!
+Use of this in real practice without proper authorization from users or network administrator is against the law.
+Play Smart, Learn Smart.
+
+Usage of this concept:
+Deauthenicate users from legitimate network and connect them to rogue AP to remove client isolation.
+SSLStrip against internal subnet for credential conpromise.
+DNSSpoof against internal subnet for proxying responses to useful URLS.
+Phishing Links setup on webservers housed on the router to deliver fake content to users.
+
+Future piece of this project:
+Add dynamic SSID naming via location-based wifi-probing. I.E. Probe for network with known SSID and clone router to be a rougue AP for that Public Network.
+Integrate Nova(https://github.com/DataSoft/Nova) to allow for seemless transition of real users of the real AP to honeypots hosted on the real network, cloned to previous users connected(IP, MAC ADDRESS, Operating System).
+Simultaneous mobile to desktop webpages for mobile clients connected to the rogue access point.
+
+To fix:
+Allow for either Vlan configuration to setup multiple webservers on different IP addresses internally or setup DNSSpoof to allow for a port-based "fakeip" option instead of strictly the IP address.
+
+Programs Used:
+
+Hwk 0.3.2(http://nullsecurity.net/wireless.html)
+-Deauthenticates clients off a given BSSID
+
+SSLStrip 0.9(http://www.thoughtcrime.org/software/sslstrip/)
+-Transparent HTTP hijacker and HTTPS redirector
+
+DNSChef 0.1(http://thesprawl.org/projects/dnschef/)
+-DNS Proxy for Penetration Testers
+
+To Be Used:
+
+Nova(https://github.com/DataSoft/Nova)
+Detects network based reconnaissance efforts and attempts to deny efforts, however in this case, it is used as an attack mechanism
