@@ -10,7 +10,7 @@ Phishing Links setup on webservers housed on the router to deliver fake content 
 
 Future piece of this project:
 Add dynamic SSID naming via location-based wifi-probing. I.E. Probe for network with known SSID and clone router to be a rougue AP for that Public Network.
-Integrate Nova(https://github.com/DataSoft/Nova) to allow for seemless transition of real users of the real AP to honeypots hosted on the real network, cloned to previous users connected(IP, MAC ADDRESS, Operating System).
+Integrate Nova(https://github.com/DataSoft/Nova) to allow for seamless transition of real users of the real AP to honeypots hosted on the real network, cloned to previous users connected(IP, MAC ADDRESS, Operating System).
 Simultaneous mobile to desktop webpages for mobile clients connected to the rogue access point.
 
 To fix:
